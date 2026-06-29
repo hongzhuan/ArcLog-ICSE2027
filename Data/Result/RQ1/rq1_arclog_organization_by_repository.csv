@@ -1,0 +1,21 @@
+Repository,Metric,Value,Numerator / Denominator
+ceph,Top-section Accuracy,0.9874,"1,100 / 1,114"
+ceph,Important Module Accuracy,0.8378,155 / 185
+ceph,Routine Slot Accuracy,0.3886,361 / 929
+ceph,Overall Organization Accuracy,0.4632,"516 / 1,114"
+dpdk,Top-section Accuracy,0.9918,"2,424 / 2,444"
+dpdk,Important Module Accuracy,0.7970,"942 / 1,182"
+dpdk,Routine Slot Accuracy,1.0000,"1,262 / 1,262"
+dpdk,Overall Organization Accuracy,0.9018,"2,204 / 2,444"
+jemalloc,Top-section Accuracy,0.9768,759 / 777
+jemalloc,Important Module Accuracy,0.8729,419 / 480
+jemalloc,Routine Slot Accuracy,0.8565,203 / 237
+jemalloc,Overall Organization Accuracy,0.8777,682 / 777
+openssl,Top-section Accuracy,1.0000,"3,174 / 3,174"
+openssl,Important Module Accuracy,1.0000,"1,348 / 1,348"
+openssl,Routine Slot Accuracy,1.0000,"1,599 / 1,599"
+openssl,Overall Organization Accuracy,1.0000,"3,174 / 3,174"
+zstd,Top-section Accuracy,0.9699,322 / 332
+zstd,Important Module Accuracy,0.8222,148 / 180
+zstd,Routine Slot Accuracy,0.9391,108 / 115
+zstd,Overall Organization Accuracy,0.8825,293 / 332
