@@ -1,0 +1,17 @@
+﻿reason,repository_count
+non_software_keyword:learn,50
+no_release_note_evidence_detected,12
+commit_count_below_threshold_or_unknown,8
+non_software_keyword:algorithm,7
+non_software_keyword:tutorials,4
+no_primary_language,3
+non_software_keyword:book,3
+non_software_keyword:dataset,3
+non_software_keyword:list,3
+no_complex_system_domain_signal,2
+language_not_allowed:Solidity,1
+language_not_allowed:V,1
+language_not_allowed:Zig,1
+non_software_keyword:books,1
+non_software_keyword:cheatsheet,1
+non_software_keyword:examples,1

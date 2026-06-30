@@ -17,6 +17,8 @@ ArcLog-ICSE 2027/
       RQ3/
       RQ4/
   ArcLog-source code/
+  Motivation-EmpiricalStudy/
+  Motivation-EmpiricalStudy.zip
 ```
 
 ## Data
@@ -36,6 +38,28 @@ ArcLog-ICSE 2027/
 The data directory intentionally excludes intermediate logs, temporary model
 outputs, batch scripts, private repositories, and previous experiment snapshots.
 
+## Motivation Empirical Study
+
+- `Motivation-EmpiricalStudy/` stores the author-verified appendix data for the
+  Motivation section's empirical observation about release-note structure in
+  large complex software systems.
+- The study starts from 1,697 GitHub candidate repositories and records the
+  manually checked coding results for 100 selected large complex software
+  systems.
+- `Motivation-EmpiricalStudy/README.md` contains the study purpose, dataset
+  construction criteria, coding rules, result metrics, folder structure, and
+  claim boundary.
+- `Motivation-EmpiricalStudy/data/` contains data-only CSV files, including the
+  final 100-repository coding table, numeric summary metrics, domain counts,
+  candidate-collection counts, exclusion-reason counts, and project-log index.
+- `Motivation-EmpiricalStudy/project_logs/` contains one evidence log for each
+  accepted repository.
+- `Motivation-EmpiricalStudy/workbook/motivation_empirical_study_data.xlsx`
+  contains the same data in an Excel workbook with data sheets only; explanatory
+  text is kept in the README.
+- `Motivation-EmpiricalStudy.zip` is the compressed copy of this directory for
+  transfer and archival.
+
 ## Source Code
 
 - `ArcLog-source code/README.md` describes how to configure and run ArcLog.
@@ -44,5 +68,4 @@ outputs, batch scripts, private repositories, and previous experiment snapshots.
   checks.
 - `ArcLog-source code/third_party/` contains the packaged ENRE-CPP and SemArc
   tools required by ArcLog.
-
 

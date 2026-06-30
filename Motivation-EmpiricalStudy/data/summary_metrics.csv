@@ -1,0 +1,9 @@
+﻿metric_id,count,denominator,percentage
+candidate_repositories,1697,,
+accepted_repositories,100,,
+rich_evidence_found,100,100,100.0
+non_flat_typed_or_structured_release_note,94,100,94.0
+important_vs_routine_split,49,100,49.0
+module_component_subsystem_organization,59,100,59.0
+important_split_and_module_organization,38,100,38.0
+non_flat_structure_and_module_organization,59,100,59.0
