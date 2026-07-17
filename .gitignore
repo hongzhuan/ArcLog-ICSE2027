@@ -1,0 +1,5 @@
+# Local development metadata
+.idea/
+__pycache__/
+*.py[cod]
+

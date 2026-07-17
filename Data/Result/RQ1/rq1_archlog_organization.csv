@@ -1,0 +1,5 @@
+Metric,Value,Numerator / Denominator
+Top-section Accuracy,0.9905,"7,834 / 7,909"
+Important Module Accuracy,0.8924,"3,012 / 3,375"
+Routine Slot Accuracy,0.8404,"3,538 / 4,210"
+Overall Organization Accuracy,0.8691,"6,874 / 7,909"
