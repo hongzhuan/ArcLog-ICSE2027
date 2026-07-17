@@ -142,7 +142,7 @@ class PipelineConfig(SerializationMixin):
     app_description_path: Optional[Path] = None
     external_analysis_enabled: bool = False
     external_analysis_reuse_existing: bool = True
-    external_worktree_root: Path = Path("repositories/.arclog_worktrees")
+    external_worktree_root: Path = Path("repositories/.archlog_worktrees")
     enre_jar_path: Path = Path("third_party/ENRE-CPP/ENRE-CPP.jar")
     enre_output_dir: Path = Path("repositories/ENRE-C")
     semarc_executable_path: Path = Path("third_party/SemArc/SemArcArcRN.exe")

@@ -120,28 +120,28 @@ def suppress_noisy_llm_loggers(*, enabled: bool):
 
 def maybe_build_llm_client(config) -> Any:
     if not getattr(config, "llm_model_name", None):
-        LOGGER.info("No llm_model_name configured. ArcLog stages will use fallback generation.")
+        LOGGER.info("No llm_model_name configured. ArchLog stages will use fallback generation.")
         return None
 
     api_key_env_var = str(getattr(config, "llm_api_key_env_var", LLM_API_KEY_ENV_VAR) or LLM_API_KEY_ENV_VAR).strip()
     api_key = os.getenv(api_key_env_var)
     if not api_key:
-        LOGGER.info("Environment variable %s is not set. ArcLog stages will use fallback generation.", api_key_env_var)
+        LOGGER.info("Environment variable %s is not set. ArchLog stages will use fallback generation.", api_key_env_var)
         return None
 
     try:
         from openai import OpenAI
     except Exception:
-        LOGGER.info("openai package is not available. ArcLog stages will use fallback generation.")
+        LOGGER.info("openai package is not available. ArchLog stages will use fallback generation.")
         return None
 
     timeout = float(getattr(config, "llm_request_timeout_sec", 180.0) or 180.0)
     base_url = getattr(config, "llm_base_url", None) or LLM_BASE_URL
     if base_url:
-        LOGGER.info("Building OpenAI-compatible client for ArcLog stages with base_url from config.")
+        LOGGER.info("Building OpenAI-compatible client for ArchLog stages with base_url from config.")
         return OpenAI(api_key=api_key, base_url=base_url, timeout=timeout)
 
-    LOGGER.info("Building default OpenAI client for ArcLog stages.")
+    LOGGER.info("Building default OpenAI client for ArchLog stages.")
     return OpenAI(api_key=api_key, timeout=timeout)
 
 
@@ -229,7 +229,7 @@ def generate_chat_completion_with_retry(
                 sleep_sec = min(max_delay, sleep_sec + sleep_sec * jitter_ratio * random.random())
 
             LOGGER.warning(
-                "ArcLog LLM retry for %s after error (attempt %d/%d): %s; sleep %.2fs",
+                "ArchLog LLM retry for %s after error (attempt %d/%d): %s; sleep %.2fs",
                 request_name,
                 attempt,
                 max_attempts,

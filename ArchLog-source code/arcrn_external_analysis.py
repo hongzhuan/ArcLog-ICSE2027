@@ -44,7 +44,7 @@ SEMARC_PHASE_LABELS = {
 
 
 def prepare_external_analysis_inputs(config: Any) -> Dict[str, str]:
-    """Generate ENRE and SemArc inputs required by the ArcLog pipeline."""
+    """Generate ENRE and SemArc inputs required by the ArchLog pipeline."""
     repo_path = _resolve_project_path(config.repo_path)
     repo_name = repo_path.name
     base_ref = str(config.base_ref)

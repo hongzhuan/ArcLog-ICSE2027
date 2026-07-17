@@ -665,7 +665,7 @@ class _GitHubPrLookup:
                 "Accept": "application/vnd.github+json",
                 "Authorization": f"Bearer {self.token}",
                 "X-GitHub-Api-Version": "2022-11-28",
-                "User-Agent": "ArcLog-Step10-PR-Metadata",
+                "User-Agent": "ArchLog-Step10-PR-Metadata",
             },
         )
 

@@ -1,6 +1,6 @@
 # Third-Party Components
 
-This package includes third-party tools required by ArcLog:
+This package includes third-party tools required by ArchLog:
 
 - ENRE-CPP: C/C++ entity and relation extraction.
 - SemArc: architecture and module recovery from source code.

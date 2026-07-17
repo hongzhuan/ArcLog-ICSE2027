@@ -55,7 +55,7 @@ LOGGER = logging.getLogger(DEFAULT_LOGGER_NAME)
 
 def run_code_change_pipeline(config: PipelineConfig) -> PipelineResult:
     """
-    Orchestrate the complete ArcLog code-changes pipeline.
+    Orchestrate the complete ArchLog code-changes pipeline.
 
     Pipeline order:
       1. locate changed methods with tree-sitter / AST

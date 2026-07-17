@@ -17,7 +17,7 @@ STAGE_OUTPUT_DIRS = {
 def stage_output_dir(output_root: Path, stage_key: str) -> Path:
     dirname = STAGE_OUTPUT_DIRS.get(stage_key)
     if dirname is None:
-        raise KeyError(f"Unknown ArcLog output stage: {stage_key}")
+        raise KeyError(f"Unknown ArchLog output stage: {stage_key}")
     return Path(output_root) / dirname
 
 

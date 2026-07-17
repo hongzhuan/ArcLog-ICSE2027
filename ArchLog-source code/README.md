@@ -1,18 +1,18 @@
-# ArcLog Source Code
+# ArchLog Source Code
 
-This directory contains the anonymized, runnable source package for ArcLog.
-ArcLog generates traceable release notes from a target repository and a pair of
+This directory contains the anonymized, runnable source package for ArchLog.
+ArchLog generates traceable release notes from a target repository and a pair of
 versions by combining code-change evidence, architecture recovery, and
 LLM-based aggregation.
 
 ## Package Layout
 
-- `scripts/run_arclog.py` is the main command-line entry point.
+- `scripts/run_archlog.py` is the main command-line entry point.
 - `scripts/check_environment.py` checks the bundled external tools and prompt
   files.
 - `config.py` stores the default runtime configuration and LLM provider
   settings.
-- `configs/arclog.example.yaml` gives a compact example configuration.
+- `configs/archlog.example.yaml` gives a compact example configuration.
 - `code_changes/` builds code-level change evidence from commits and diffs.
 - `arch_changes-reports/` contains the SemArc output differ used by Phase 1.
 - `prompts/` contains the prompt templates used by Phase 2 and Phase 3.
@@ -22,7 +22,7 @@ LLM-based aggregation.
 
 ## Method Phases
 
-ArcLog follows the three phases described in the paper.
+ArchLog follows the three phases described in the paper.
 
 ### Phase 1: Multi-Source Change Evidence Construction
 
@@ -102,31 +102,31 @@ $env:SILICONFLOW_API_KEY = "your_api_key"
 To use a different provider at run time, pass `--provider` with one of the
 supported provider names.
 
-## Running ArcLog
+## Running ArchLog
 
-Run ArcLog on a repository/version pair:
+Run ArchLog on a repository/version pair:
 
 ```bash
-python scripts/run_arclog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example
+python scripts/run_archlog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example
 ```
 
 Use an existing ENRE/SemArc cache when present:
 
 ```bash
-python scripts/run_arclog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example --reuse-external
+python scripts/run_archlog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example --reuse-external
 ```
 
 If external analysis has already been prepared and paths are configured, skip
 ENRE/SemArc preparation:
 
 ```bash
-python scripts/run_arclog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example --skip-external
+python scripts/run_archlog.py --repo /path/to/repo --base-ref v1.0.0 --new-ref v1.1.0 --output-dir outputs/example --skip-external
 ```
 
 Use the built-in help to inspect all options:
 
 ```bash
-python scripts/run_arclog.py --help
+python scripts/run_archlog.py --help
 ```
 
 ## Main Outputs
@@ -146,4 +146,4 @@ note files. The main final outputs are:
 This source package intentionally excludes local git repositories, previous
 experiment outputs, private workbooks, bulk experiment scripts, and manuscript
 files. It keeps only the code, prompts, configuration, and third-party runtime
-components needed to run ArcLog.
+components needed to run ArchLog.

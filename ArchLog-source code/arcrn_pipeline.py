@@ -215,9 +215,9 @@ def run_arcrn_pipeline(config, *, include_code_changes: bool = True) -> ArcRNPip
             **aggregation_plan_result.output_files,
             **section_entries_result.output_files,
             **final_note_result.output_files,
-            "arclog_pipeline_report_json": str(report_json_path),
-            "arclog_pipeline_overview_markdown": str(overview_md_path),
-            "arclog_outputs_index_markdown": str(output_index_md_path),
+            "archlog_pipeline_report_json": str(report_json_path),
+            "archlog_pipeline_overview_markdown": str(overview_md_path),
+            "archlog_outputs_index_markdown": str(output_index_md_path),
         },
     )
 
@@ -239,7 +239,7 @@ def run_arcrn_pipeline(config, *, include_code_changes: bool = True) -> ArcRNPip
     return result
 
 
-def run_arclog_pipeline(config, *, include_code_changes: bool = True) -> ArcRNPipelineResult:
+def run_archlog_pipeline(config, *, include_code_changes: bool = True) -> ArcRNPipelineResult:
     return run_arcrn_pipeline(config, include_code_changes=include_code_changes)
 
 
@@ -316,15 +316,15 @@ def _save_pipeline_report(result: ArcRNPipelineResult, output_dir: Path) -> Tupl
 
 def _pipeline_report_paths(output_dir: Path) -> Tuple[Path, Path, Path]:
     return (
-        output_dir / "arclog_pipeline_report.json",
-        output_dir / "arclog_pipeline_overview.md",
+        output_dir / "archlog_pipeline_report.json",
+        output_dir / "archlog_pipeline_overview.md",
         output_dir / "outputs_index.md",
     )
 
 
 def _render_pipeline_overview(result: ArcRNPipelineResult) -> str:
     lines = [
-        "# ArcLog Pipeline Overview",
+        "# ArchLog Pipeline Overview",
         "",
         f"- Repository: `{result.repo_name}`",
         f"- Version range: `{result.base_ref} -> {result.new_ref}`",
@@ -362,7 +362,7 @@ def _render_pipeline_overview(result: ArcRNPipelineResult) -> str:
 
 def _render_output_index(result: ArcRNPipelineResult) -> str:
     lines = [
-        "# ArcLog Outputs Index",
+        "# ArchLog Outputs Index",
         "",
         f"- Output root: `{result.output_dir}`",
         "",

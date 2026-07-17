@@ -1,4 +1,4 @@
-"""ArcLog runtime helper."""
+"""ArchLog runtime helper."""
 
 from __future__ import annotations
 

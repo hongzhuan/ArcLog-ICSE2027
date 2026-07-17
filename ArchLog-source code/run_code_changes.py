@@ -233,7 +233,7 @@ def _render_run_overview(result) -> str:
     summaries = result.final_summaries()
 
     lines: List[str] = []
-    lines.append("ArcLog Run Overview")
+    lines.append("ArchLog Run Overview")
     lines.append("=" * 80)
     lines.append(f"Repository: {config.repo_path}")
     lines.append(f"Version range: {config.base_ref} -> {config.new_ref}")

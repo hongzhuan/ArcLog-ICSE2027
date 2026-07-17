@@ -7,7 +7,7 @@ from pathlib import Path
 # ============================================================
 
 MODULE_NAME = "code_changes"
-PIPELINE_NAME = "ArcLogCodeChangesPipeline"
+PIPELINE_NAME = "ArchLogCodeChangesPipeline"
 
 # ============================================================
 # Change types
@@ -256,7 +256,7 @@ JSON_INDENT = 2
 PATCH_HEADER_PREFIX = "@@"
 GIT_NULL_TREE_HASH = "4b825dc642cb6eb9a060e54bf8d69288fbee4904"
 
-DEFAULT_LOGGER_NAME = "arclog.code_changes"
+DEFAULT_LOGGER_NAME = "archlog.code_changes"
 
 # ============================================================
 # Utility helpers

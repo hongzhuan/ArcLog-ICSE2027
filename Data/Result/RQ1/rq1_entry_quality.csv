@@ -1,5 +1,5 @@
 Method,Recall,Precision,F1,Important Recall,Routine Recall
-ArcLog,0.9044,0.7323,0.8093,0.9825,0.8455
+ArchLog,0.9044,0.7323,0.8093,0.9825,0.8455
 SmartNote,0.4422,0.6840,0.5371,0.4761,0.4166
 VerLog,0.2266,0.8096,0.3541,0.2802,0.1862
 TextRank,0.4398,0.1912,0.2666,0.3216,0.5289

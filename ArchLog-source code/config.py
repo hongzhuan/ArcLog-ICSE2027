@@ -260,9 +260,9 @@ def _coerce_bool(value: Any) -> bool:
 
 def build_config() -> PipelineConfig:
     """
-    Build the default ArcLog runtime configuration.
+    Build the default ArchLog runtime configuration.
 
-    The CLI wrapper in `scripts/run_arclog.py` overrides the repository, version
+    The CLI wrapper in `scripts/run_archlog.py` overrides the repository, version
     pair, output directory, and selected external-tool paths. Edit this function
     only when running the pipeline directly from Python.
     """
@@ -282,7 +282,7 @@ def build_config() -> PipelineConfig:
     enre_output_dir = Path("outputs") / "external_artifacts" / repo_name / "ENRE"
     enre_json_path = enre_output_dir / f"{repo_name}-{new_ref}_out.json"
     semarc_output_dir = Path("outputs") / "external_artifacts" / "semarc_results"
-    external_worktree_root = Path("repositories") / ".arclog_worktrees"
+    external_worktree_root = Path("repositories") / ".archlog_worktrees"
     enre_jar_path = Path("third_party") / "ENRE-CPP" / "ENRE-CPP.jar"
     semarc_executable_path = Path("third_party") / "SemArc" / "SemArcArcRN.exe"
     semarc_source_dir = Path("third_party") / "SemArc"

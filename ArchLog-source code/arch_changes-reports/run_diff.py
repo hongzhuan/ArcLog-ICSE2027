@@ -1,4 +1,4 @@
-"""ArcLog runtime helper."""
+"""ArchLog runtime helper."""
 
 from __future__ import annotations
 
@@ -314,7 +314,7 @@ def run_diff(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate ArcLog architecture-diff input from two SemArc result directories.")
+    parser = argparse.ArgumentParser(description="Generate ArchLog architecture-diff input from two SemArc result directories.")
     parser.add_argument("--dir-a", type=Path, default=Path(r"sema_results/jsoncpp-1.9.4"))
     parser.add_argument("--dir-b", type=Path, default=Path(r"sema_results/jsoncpp-1.9.5"))
     parser.add_argument("--version-a", default="1.9.4")

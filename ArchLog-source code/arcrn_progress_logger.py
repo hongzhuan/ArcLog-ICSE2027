@@ -30,7 +30,7 @@ def write_progress_event(config: Any, event_type: str, **fields: Any) -> None:
     try:
         progress_dir = output_dir / "00_pipeline_summary"
         progress_dir.mkdir(parents=True, exist_ok=True)
-        progress_path = progress_dir / "arclog_progress.jsonl"
+        progress_path = progress_dir / "archlog_progress.jsonl"
         with _PROGRESS_LOCK:
             with progress_path.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps(payload, ensure_ascii=False) + "\n")
