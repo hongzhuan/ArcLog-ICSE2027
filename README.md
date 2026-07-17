@@ -1,22 +1,22 @@
-# ArcLog Artifact Package
+# ArchLog Artifact Package
 
-This package contains the anonymized data and source code for ArcLog. The
+This package contains the anonymized data and source code for ArchLog. The
 package is organized to expose only the final audited artifacts needed to
 inspect the experiment data and run the method on a repository/version pair.
 
 ## Directory Layout
 
 ```text
-ArcLog-ICSE 2027/
+ArchLog-ICSE 2027/
   Data/
     Ground Truth/
     Result/
-      ArcLog Release Notes/
+      ArchLog Release Notes/
       RQ1/
       RQ2/
       RQ3/
       RQ4/
-  ArcLog-source code/
+  ArchLog-source code/
   Motivation-EmpiricalStudy/
   Motivation-EmpiricalStudy.zip
 ```
@@ -27,8 +27,8 @@ ArcLog-ICSE 2027/
   ground-truth entries for each version pair.
 - `Data/Ground Truth/<version-pair>/ground_truth.md` stores the rendered
   Markdown version of the same ground truth.
-- `Data/Result/ArcLog Release Notes/<version-pair>/final_release_note_traceable.md`
-  stores ArcLog's final traceable release note for each version pair, including
+- `Data/Result/ArchLog Release Notes/<version-pair>/final_release_note_traceable.md`
+  stores ArchLog's final traceable release note for each version pair, including
   commit and pull-request links.
 - `Data/Result/RQ1/` stores the final RQ1 result tables.
 - `Data/Result/RQ2/` stores the final RQ2 result tables.
@@ -62,10 +62,10 @@ outputs, batch scripts, private repositories, and previous experiment snapshots.
 
 ## Source Code
 
-- `ArcLog-source code/README.md` describes how to configure and run ArcLog.
-- `ArcLog-source code/requirements.txt` lists the Python dependencies.
-- `ArcLog-source code/scripts/` contains runnable entry points and environment
+- `ArchLog-source code/README.md` describes how to configure and run ArchLog.
+- `ArchLog-source code/requirements.txt` lists the Python dependencies.
+- `ArchLog-source code/scripts/` contains runnable entry points and environment
   checks.
-- `ArcLog-source code/third_party/` contains the packaged ENRE-CPP and SemArc
-  tools required by ArcLog.
+- `ArchLog-source code/third_party/` contains the packaged ENRE-CPP and SemArc
+  tools required by ArchLog.
 
